@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation | Homepage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="#">Reservation</a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- <a href="#" class="cta"><button class="rvs">Contact</button></a> -->
+        </div>
+    </nav>
+    <div class="banner">
+        <div class="banner__title">
+            <h1>Welcome To </h1>
+            <p>Reserv</p>
+            <div class="title__info">
+                <!-- <h4>We made a diferent <b>Style</b>, <b>Always Connect</b></h4> -->
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="content">
+            <div class="title">
+                <h1>- Premium Room -</h1>
+            </div>
+            <!-- Card Content -->
+            <div class="card__content">
+                <div class="card card__1">
+                    <div class="container">
+                        <div class="card__image">
+                            <img src="/img/banner-1-cp.jpg" alt="Premium Room 1">
+                        </div>
+                        <div class="detail__card-1">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h3>Premium Room</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae beatae sapiente, in corporis quae illo?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card__2">
+                    <div class="container">
+                        <div class="card__image">
+                            <img src="/img/banner-9.jpg" alt="Premium Room 2">
+                        </div>
+                        <div class="detail__card-2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <h3>President Suite</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae beatae sapiente, in corporis quae illo?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card__3">
+                    <div class="container">
+                        <div class="card__image">
+                            <img src="/img/banner-11.jpg" alt="Premium Room 3">
+                        </div>
+                        <div class="detail__card-3">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h3>Honey Moon Suite</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae beatae sapiente, in corporis quae illo?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END CARD CONTENT-->
+        </div>
+        <div class="card__banner">
+            <div class="card__jumbotxt">
+                <h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iste consequuntur alias id, nobis fugit beatae consectetur vero sunt expedita quibusdam ad enim dolores assumenda blanditiis, perferendis ducimus ab minus officia temporibus
+                    soluta sapiente!</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const topNav = document.querySelector("top__nav");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        const contactBtn = document.querySelector(".rvs");
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+</body>
+
+</html>

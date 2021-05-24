@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montez&family=Montserrat&family=Bad+Script:wght@200;300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #2e2423;
+}
+
+
+/* custom scroll bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::selection {
+    background: rgb(0, 123, 255, 0.3);
+}
+
+.content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 30px 10%;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    background: #222;
+    padding: 10px 0;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    font-family: 'Bad Script', sans-serif;
+}
+
+.navbar .logo a {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar .menu-list {
+    display: inline-flex;
+    padding: 0px 20px;
+}
+
+.menu-list li {
+    list-style: none;
+    /* padding: 0px 20px;
+    display: inline-block; */
+}
+
+.menu-list li a {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu-list li a:hover {
+    color: #2a6961;
+}
+
+.banner {
+    background: url("/img/banner-lg-4.jpg") no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner__title {
+    color: #fff;
+    text-align: center;
+}
+
+.banner__title h1 {
+    padding-top: 20rem;
+    font-size: 60px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.banner__title p {
+    word-break: break-all;
+    font-size: 90px;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+
+/* .title__info h4 {
+    font-size: 10px;
+} */
+
+.about {
+    padding: 30px 0;
+}
+
+.about .title {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.about p {
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.icon {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-list .cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+@media (max-width: 1230px) {
+    .content {
+        padding: 0 60px;
+    }
+    .rvs {
+        display: block;
+    }
+}
+
+@media (max-width: 1100px) {
+    .content {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .content {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 868px) {
+    body.disabled {
+        overflow: hidden;
+    }
+    .icon {
+        display: block;
+    }
+    .icon.hide {
+        display: none;
+    }
+    .navbar .menu-list {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        background: #222;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+    .navbar.show .menu-list {
+        left: 0%;
+    }
+    .navbar .menu-list li {
+        margin-top: 45px;
+    }
+    .navbar .menu-list li a {
+        font-size: 23px;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .navbar.show .menu-list li a {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 380px) {
+    .navbar .logo a {
+        font-size: 27px;
+    }
+}
+
+.rvs {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.rvs:hover {
+    background-color: #2a6961;
+    color: #fff;
+    cursor: pointer;
+}
+
+.title h1 {
+    margin-top: 5rem;
+    margin-bottom: 40px;
+    font-size: 60px;
+    text-align: center;
+    color: #aa9790;
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 400;
+}
+
+.card__content {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 2fr));
+    padding: 20px;
+    grid-gap: 35px;
+    margin-bottom: 90px;
+}
+
+.card {
+    background-color: rgb(211, 187, 175);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.container {
+    position: relative;
+}
+
+.card__image img {
+    width: 100%;
+    display: block;
+    border-radius: 8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    -ms-border-radius: 8px 8px 0 0;
+    -o-border-radius: 8px 8px 0 0;
+}
+
+.card__2 {
+    height: 39rem;
+}
+
+.detail__card-1 {
+    padding: 55px;
+    display: block;
+    height: 300px;
+}
+
+.detail__card-2 {
+    padding: 55px;
+    display: block;
+    height: 300px;
+}
+
+.detail__card-3 {
+    padding: 55px;
+    display: block;
+    height: 300px;
+}
+
+.detail__card {
+    padding: 20px;
+    display: block;
+}
+
+.detail__card h3 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font: #fff;
+}
+
+.detail__card p {
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+}
+
+
+/* .card__1:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: transform .5s ease;
+    overflow: hidden;
+    -webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -ms-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+}
+
+.card__2:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transition: transform .5s ease;
+    overflow: hidden;
+}
+
+.card__3:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: transform .5s ease;
+    overflow: hidden;
+} */
+
+.card__banner {
+    background: url("/img/dining-2.jpg") no-repeat;
+    height: 55vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 160px;
+}
+
+.card__banner h4 {
+    color: #fff;
+    text-align: center;
+    inline-size: 100%;
+    overflow-wrap: break-word;
+    padding: 15em;
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 7.6em;
+    line-height: 1.8em;
+}
+
+
+/*RATING*/
+
+.checked {
+    color: rgb(177, 14, 14);
+    margin-bottom: 1rem;
+}
