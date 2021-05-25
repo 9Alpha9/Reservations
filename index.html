@@ -98,35 +98,63 @@
             <!--END CARD CONTENT-->
         </div>
         <div class="card__banner">
-            <div class="card__jumbotxt">
-                <h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iste consequuntur alias id, nobis fugit beatae consectetur vero sunt expedita quibusdam ad enim dolores assumenda blanditiis, perferendis ducimus ab minus officia temporibus
-                    soluta sapiente!</h4>
-            </div>
+            <h4>dont missing it, <b>join now !</b></h4>
+            <a href="#" class="get__link">
+                <button class="join__now__button">Sign Up</button>
+            </a>
         </div>
     </div>
+    <div class="banner__container">
+        <div class="banner__flex">
+            <h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim alias quis veritatis necessitatibus explicabo sequi consequatur voluptate et, quisquam odit recusandae quaerat fugiat, dicta voluptatem laudantium aliquid iure eius iusto?
+            </h1>
+        </div>
+        <div class="banner__flex">
+            <h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim alias quis veritatis necessitatibus explicabo sequi consequatur voluptate et, quisquam odit recusandae quaerat fugiat, dicta voluptatem laudantium aliquid iure eius iusto?
+            </h1>
+        </div>
+        <div class="banner__flex">
+            <h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim alias quis veritatis necessitatibus explicabo sequi consequatur voluptate et, quisquam odit recusandae quaerat fugiat, dicta voluptatem laudantium aliquid iure eius iusto?
+            </h1>
+        </div>
+        <div class="banner__flex">
+            <h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim alias quis veritatis necessitatibus explicabo sequi consequatur voluptate et, quisquam odit recusandae quaerat fugiat, dicta voluptatem laudantium aliquid iure eius iusto?
+            </h1>
+        </div>
+    </div>
+    <div class="footer__tp">
+        <div class="footer__title">
+            <div class="heading">
+                <h1>Copyright &copy; 2021 By Smart Hotel Reservation.</h1>
+            </div>
+        </div>
 
-
-    <script>
-        const body = document.querySelector("body");
-        const navbar = document.querySelector(".navbar");
-        const topNav = document.querySelector("top__nav");
-        const menuBtn = document.querySelector(".menu-btn");
-        const cancelBtn = document.querySelector(".cancel-btn");
-        const contactBtn = document.querySelector(".rvs");
-        menuBtn.onclick = () => {
-            navbar.classList.add("show");
-            menuBtn.classList.add("hide");
-            body.classList.add("disabled");
-        }
-        cancelBtn.onclick = () => {
-            body.classList.remove("disabled");
-            navbar.classList.remove("show");
-            menuBtn.classList.remove("hide");
-        }
-        window.onscroll = () => {
-            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-        }
-    </script>
+        <!--JAVA-->
+        <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar");
+            const topNav = document.querySelector("top__nav");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            const contactBtn = document.querySelector(".rvs");
+            menuBtn.onclick = () => {
+                navbar.classList.add("show");
+                menuBtn.classList.add("hide");
+                body.classList.add("disabled");
+            }
+            cancelBtn.onclick = () => {
+                body.classList.remove("disabled");
+                navbar.classList.remove("show");
+                menuBtn.classList.remove("hide");
+            }
+            window.onscroll = () => {
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+        </script>
 </body>
 
 </html>
