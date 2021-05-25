@@ -14,7 +14,7 @@ body {
 /* custom scroll bar */
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -22,7 +22,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #1f1615;
 }
 
 ::selection {
@@ -39,13 +39,13 @@ body {
     position: fixed;
     width: 100%;
     z-index: 2;
-    padding: 30px 10%;
+    padding: 40px 10%;
     transition: all 0.3s ease;
 }
 
 .navbar.sticky {
     background: #222;
-    padding: 10px 0;
+    padding: 30px 0;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -329,8 +329,7 @@ body {
     line-height: 1.6;
 }
 
-
-/* .card__1:hover {
+.card__1:hover {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -362,29 +361,85 @@ body {
     -o-transform: scale(1.1);
     transition: transform .5s ease;
     overflow: hidden;
-} */
+}
 
 .card__banner {
-    background: url("/img/dining-2.jpg") no-repeat;
-    height: 55vh;
+    background: url("/img/banner-13.jpg") no-repeat;
+    height: 60vh;
     width: 100%;
+    top: 40rem;
     background-size: cover;
     background-position: center;
     margin-top: 160px;
 }
 
-.card__banner h4 {
+.bg__txt {
+    background-color: #fff;
+    position: relative;
+    /* width: 90px;
+    height: 90px; */
+    padding: 50px 40px;
+}
+
+.join__now__button {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    display: inline-table;
+    cursor: pointer;
+    position: relative;
+    margin: 0 auto;
+    left: 50%;
+    top: auto;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.join__now__button:hover {
+    background-color: #aa9790;
     color: #fff;
+    transition: 0.3ms ease-in-out;
+    animation-delay: 4s;
+    -webkit-transition: 0.3ms ease-in-out;
+    -moz-transition: 0.3ms ease-in-out;
+    -ms-transition: 0.3ms ease-in-out;
+    -o-transition: 0.3ms ease-in-out;
+}
+
+.card__banner a {
+    text-decoration: none;
+    overflow: hidden;
+}
+
+
+/*Card Banner*/
+
+.card__banner h4 {
+    color: #63554f;
     text-align: center;
     inline-size: 100%;
-    overflow-wrap: break-word;
-    padding: 15em;
+    /* overflow-wrap: break-word; */
     display: block;
     text-overflow: ellipsis;
     word-wrap: break-word;
     overflow: hidden;
-    max-height: 7.6em;
-    line-height: 1.8em;
+    /* max-height: 7.6em;
+    line-height: 1.8em; */
+    text-transform: uppercase;
+    font-size: 3em;
+    padding-top: 4.1em;
+    font-weight: 200;
+    position: relative;
+    bottom: 2%;
 }
 
 
@@ -393,4 +448,78 @@ body {
 .checked {
     color: rgb(177, 14, 14);
     margin-bottom: 1rem;
+}
+
+
+/*Footer*/
+
+.footer__tp {
+    background-color: #222;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.banner__title {
+    position: relative;
+}
+
+.banner__container {
+    display: flex;
+    flex-wrap: nowrap;
+    line-height: 1.5em;
+}
+
+.banner__flex h1 {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.banner__flex h1 {
+    color: #fff;
+    font-size: 16px;
+    margin: 90px;
+    left: 0;
+    bottom: 0;
+}
+
+.heading h1 {
+    font-size: 13px;
+}
+
+.footer__title {
+    padding: 20px;
+    color: #aa9790;
+    top: 50%;
+}
+
+.footer__title ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__title ul li {
+    margin-top: 6px;
+    padding: 0;
+}
+
+.footer__title ul li a {
+    text-decoration: none;
+}
+
+.heading {
+    margin-bottom: 2rem !important;
+    margin-top: 2rem !important;
+}
+
+.heading h3 {
+    font-weight: 200;
+    font-size: 18px;
 }
