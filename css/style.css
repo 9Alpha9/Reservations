@@ -97,7 +97,7 @@ body {
 }
 
 .banner {
-    background: url("/img/banner-lg-4.jpg") no-repeat;
+    background: url("img/banner-lg-4.jpg") no-repeat;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -364,7 +364,7 @@ body {
 }
 
 .card__banner {
-    background: url("/img/banner-13.jpg") no-repeat;
+    background: url("img/banner-13.jpg") no-repeat;
     height: 60vh;
     width: 100%;
     top: 40rem;
@@ -436,7 +436,7 @@ body {
     line-height: 1.8em; */
     text-transform: uppercase;
     font-size: 3em;
-    padding-top: 4.1em;
+    padding-top: 5.1em;
     font-weight: 200;
     position: relative;
     bottom: 2%;
